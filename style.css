@@ -13,10 +13,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-main {
-  background-color: rgb(246 247 251);
-}
-
 .wrap {
   width: 375px;
 }
@@ -26,7 +22,6 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 48px;
-  background-color: white;
 }
 
 .logo {
@@ -44,11 +39,15 @@ header {
   align-items: center;
   height: 48px;
   width: 375px;
-  border: 1px solid white;
+  border: 1px solid yellow;
 }
 
 .menu-icon {
   margin-right: 10px;
+}
+
+.dst-cont {
+
 }
 
 .dsktp-lf-menu {
@@ -92,13 +91,7 @@ section {
 
 .about_myself {
   background-image: none;
-  background-color: white;
-  border-top-right-radius: 70px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding-left: 8%;
-  padding-top: 4%;
+  border-bottom-left-radius: 60px;
 }
 
 .contact-title {
@@ -134,7 +127,6 @@ section {
   gap: 12px;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  margin-bottom: 2%;
 }
 
 .project-text {
@@ -375,6 +367,7 @@ form {
 }
 
 @media only screen and (min-width: 768px) {
+
   .wrap {
     width: 100%;
   }
@@ -385,6 +378,7 @@ form {
     align-items: center;
     height: 48px;
     width: 100%;
+    border: 1px soilid black;
   }
 
   nav {
@@ -397,8 +391,7 @@ form {
     align-items: center;
     height: 48px;
     width: 100%;
-    border: 1px solid white;
-    padding-left: 7%;
+    border: 1px solid yellow;
   }
 
   .dsktp-lf-menu {
@@ -420,7 +413,7 @@ form {
   .menu-ul {
     display: flex;
     width: 400px;
-    border: 1px solid white;
+    border: 1px solid yellow;
   }
 
   .menu-ul li {
@@ -434,70 +427,26 @@ form {
     padding: 15em;
     min-height: 196hv;
     background-image: url("images/desktop/desktop_image/header_bg.svg");
-    background-color: white;
+    border: 1px solid blue;
   }
-
-  .hero-area{
-    margin : 1px;
-    border-button-left-radius: 70px;
-  }
-   .all_middle_container {
+   .project {
     width: 100%;
     align: center;
-    padding: 10em;
+    padding: 15em;
     min-height: 196hv;
-    border: 1px solid white;
+    background-image: url("images/desktop/desktop_image/header_bg.svg");
+    border: 1px solid blue;
   }
-
-  .mobile_project{
+  #mobile_project{
     display:none;
   }
-
-  .card {
-    display: flex;
-    flex-direction: row;
-    padding: 16px;
-    gap: 12px;
-    border: 1px solid #dfe1e6;
-    border-radius: 16px;
-    margin-bottom: 2%;
-    background-color: white;
-    }
-
-  .right-block {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding-left: 8%;
-   padding-top: 4%;     
+  #desktop_project{
+    align:left
+  }
+  .left-block{
+    align:right;
   }
 
-  .left-block {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding-left: 8%;
-    padding-top: 4%;
-  }
-
-  .about-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 37px;
-  }
-
-
-  .language-list {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    padding: 1em;
-  }
-  .multi-post-stories{
-    display: flex;
-    flex-display: row;
-  }
-}
   .card {
     display: flex;
     flex-direction: row;
@@ -508,9 +457,5 @@ form {
   }
 
 
-
-@media only screen and (max-width: 768px) {
-  .desktop_project {
-    display: none;
-  }
+  
 }
